@@ -5,5 +5,5 @@ function setup() {
 
 function draw() {
 	fill(0);
-	rect(20, 20, 40, 40);
+	ellipse(20, 20, 40, 40);
 }
