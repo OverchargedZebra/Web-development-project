@@ -2,7 +2,25 @@
 <html lang="en">
     <head>
         <style>
-            
+            div.a {
+  text-align: left;
+}
+            .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
             #FAQ {
   background-color: lightblue;
   color: black;
@@ -16,14 +34,27 @@
         </style>
     </head>
     <body>
+        
     <h1 id="FAQ">FAQ</h1>
 
     <table style="width:100%">
+        <div class="a">
+        <tr><td style="font-size:30px";style='font-size:100px;'>&#8853;  Mangement</td></tr>
+        <tr><td style="font-size:30px";style='font-size:100px;'>&#8853;  Rides    </td></tr>
+        <tr><td style="font-size:30px";style='font-size:100px;'>&#8853;  Booking  </td></tr>
+        <tr><td style="font-size:30px";style='font-size:100px;'>&#8861;  
+          <div class="dropdown">
+  <span>Others</span>
+  <div class="dropdown-content">
+    <p1>Question</p1>
+    <p2>Answer</p2>
+    <p3>Question</p3>
+    <p4>Answer</p4>
+  </div>
+</div>
+            </td></tr>
+        </div>
         
-        <tr><th style="font-size:30px";style='font-size:100px;'>&#8853;  Mangement</th></tr>
-        <tr><th style="font-size:30px";style='font-size:100px;'>&#8853;  Rides</th></tr>
-        <tr><th style="font-size:30px";style='font-size:100px;'>&#8853;  Booking</th> </tr>
-        <tr><th style="font-size:30px";style='font-size:100px;'>&#8861;  Others</th> </tr>
 </table>
     
     </body>
