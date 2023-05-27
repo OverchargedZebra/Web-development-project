@@ -6,3 +6,11 @@ html, body {
 canvas {
   display: block;
 }
+
+#legend-marker{
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+  width: 550px;
+  height: auto;
+}
