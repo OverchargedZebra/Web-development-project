@@ -3,23 +3,25 @@
 	<head>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link
 			rel="icon"
 			href="assets/images/Wacky_World_Logo.png"
 			type="image/x-icon"
-		/>
+		>
         <link rel="stylesheet" href="stylesheets/style.css">
 		<title>Home Page</title>
 		<style>
-			table,
-			th,
-			td {
+			table,th,td {
 				border: 1px solid black;
 				background-color: black;
 			}
-			body,
-			html {
+
+			body{
+				background: url(assets/images/pexels-felix-mittermeier-956999.jpg);
+			}
+
+			body,html {
 				margin: 0;
 				font-family: Arial, sans-serif;
 				height: 100%;
@@ -153,9 +155,9 @@
 			}
 		</style>
 	</head>
-	<body background="Assets\Images\pexels-felix-mittermeier-956999.jpg">
+	<body>
 		<ul class="navbar">
-            <li> <img src="assets/images/Wacky_World_Logo.png" width="50px" height="50px"></li>
+            <li> <img src="assets/images/Wacky_World_Logo.png" width="50" height="50" alt="Wacky_World_Logo"></li>
             <li><a href="homepage.html">Home</a></li>
             <li><a href="faq.html">Help Center</a></li>
             <li><a href="virtualpark.html">Virtual Park</a></li>
@@ -165,7 +167,7 @@
 				src="your-image-url.jpg"
 				alt="Background Image"
 				class="background-image"
-			/>
+			>
 			<div class="text-container">
 				<div class="company-name">Wacky World</div>
 				<div class="slogan">Your Company Slogan</div>
@@ -183,7 +185,7 @@
 					<img
 						src="your-attractions-image-url.jpg"
 						alt="Attractions Image"
-					/>
+					>
 				</div>
 			</div>
 		</div>
@@ -292,7 +294,7 @@
 		>
 			Where dreams come true!
 		</div>
-		<img src="assets/images/temp-image.jpg" width="1000" height="500" />
+		<img src="assets/images/temp-image.jpg" width="1000" height="500" alt="logo-pic">
 		<div class="signup-section">
 			<div class="signup-box">
 				<form action="your-signup-url" method="post">
@@ -304,10 +306,8 @@
 							id="username"
 							name="username"
 							required
-						/>
-						<label for="username" class="input-label"
-							>Username</label
 						>
+						<label for="username" class="input-label">Username</label>
 					</div>
 					<div class="input-container">
 						<input
@@ -316,10 +316,8 @@
 							id="password"
 							name="password"
 							required
-						/>
-						<label for="password" class="input-label"
-							>Password</label
 						>
+						<label for="password" class="input-label">Password</label>
 					</div>
 					<button type="submit" class="signup-button">Sign Up</button>
 				</form>
@@ -329,26 +327,30 @@
 			Our Partners
 		</h2>
 		<img
-			src="Assets\Images\Wacky_World_Logo.png"
+			src="assets/images/Wacky_World_Logo.png"
 			width="500"
 			height="500"
-		/>
+			alt="logo-pic"
+		>
 		<img
-			src="Assets\Images\Wacky_World_Logo.png"
+			src="assets/images/Wacky_World_Logo.png"
 			width="500"
 			height="500"
-		/>
+			alt="logo-pic"
+		>
 		<img
-			src="Assets\Images\Wacky_World_Logo.png"
+			src="assets/images/Wacky_World_Logo.png"
 			width="500"
 			height="500"
-		/>
+			alt="logo-pic"
+		>
 		<img
-			src="Assets\Images\Wacky_World_Logo.png"
+			src="assets/images/Wacky_World_Logo.png"
 			width="500"
 			height="500"
-		/>
-		<img src="assets/images/temp-image.jpg" width="1000" height="500" />
+			alt="logo-pic"
+		>
+		<img src="assets/images/temp-image.jpg" width="1000" height="500" alt="about us">
 		<table style="width: 100%">
 			<tr>
 				<td style="text-align: center; color: white; font-size: 200%">
@@ -376,6 +378,8 @@
 				<td style="text-align: center; color: white; font-size: 200%">
 					Theme park map
 				</td>
+				<td></td>
+				<td></td>
 			</tr>
 		</table>
 	</body>
