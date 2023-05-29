@@ -36,16 +36,17 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				color: white;
 			}
 			.company-name {
 				font-size: 48px;
 				font-weight: bold;
-				color: #000000;
+				color: #ffffff;
 				margin-bottom: 10px;
 			}
 			.slogan {
 				font-size: 24px;
-				color: #000000;
+				color: #ffffff;
 			}
 			.attractions-section {
 				display: flex;
@@ -56,11 +57,13 @@
 			.attractions-text {
 				flex: 1;
 				text-align: center;
+				color:#ffffff;
 			}
 			.attractions-title {
 				font-size: 36px;
 				font-weight: bold;
 				margin-bottom: 20px;
+				color: #ffffff;
 			}
 			.attractions-body {
 				font-size: 16px;
@@ -151,7 +154,7 @@
 				class="background-image"
 			/>
 			<div class="text-container">
-				<div class="company-name">Your Company Name</div>
+				<div class="company-name">Wacky World</div>
 				<div class="slogan">Your Company Slogan</div>
 			</div>
 		</div>
@@ -277,6 +280,38 @@
 			Where dreams come true!
 		</div>
 		<img src="Assets\Images\cross.jpg.jpg" width="1000" height="500" />
+		<div class="signup-section">
+			<div class="signup-box">
+				<form action="your-signup-url" method="post">
+					<div class="signup-title">Sign Up</div>
+					<div class="input-container">
+						<input
+							type="text"
+							class="input-field"
+							id="username"
+							name="username"
+							required
+						/>
+						<label for="username" class="input-label"
+							>Username</label
+						>
+					</div>
+					<div class="input-container">
+						<input
+							type="password"
+							class="input-field"
+							id="password"
+							name="password"
+							required
+						/>
+						<label for="password" class="input-label"
+							>Password</label
+						>
+					</div>
+					<button type="submit" class="signup-button">Sign Up</button>
+				</form>
+			</div>
+		</div>
 		<h2 style="text-align: center; color: white; font-size: 400%">
 			Our Partners
 		</h2>
@@ -330,37 +365,5 @@
 				</td>
 			</tr>
 		</table>
-		<div class="signup-section">
-			<div class="signup-box">
-				<form action="your-signup-url" method="post">
-					<div class="signup-title">Sign Up</div>
-					<div class="input-container">
-						<input
-							type="text"
-							class="input-field"
-							id="username"
-							name="username"
-							required
-						/>
-						<label for="username" class="input-label"
-							>Username</label
-						>
-					</div>
-					<div class="input-container">
-						<input
-							type="password"
-							class="input-field"
-							id="password"
-							name="password"
-							required
-						/>
-						<label for="password" class="input-label"
-							>Password</label
-						>
-					</div>
-					<button type="submit" class="signup-button">Sign Up</button>
-				</form>
-			</div>
-		</div>
 	</body>
 </html>
