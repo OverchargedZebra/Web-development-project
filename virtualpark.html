@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <link rel="stylesheet" href="stylesheets/style.css">
 
         <title>Virtual park</title>
@@ -10,30 +11,30 @@
 
     <body>
         <div id="virtual-map">
-        <img src="assets/images/temp-image.jpg" alt="image of Wacky world's map" width="500" height="500" usemap="#wackyworldmap">
+        <img id="wacky-world-map" src="assets/images/wacky-world-map.jpg" alt="wacky-world-map" usemap="#wackyworldmap">
         <map name="wackyworldmap">
-            <area shape="rect" coords="0,0,100,100" href="#rollercoaster" alt="rollercoaster">
+            <area shape="circle" coords="320,170,20" href="#rollercoaster" alt="rollercoaster">
             <!--Image is temperory and thus the map does not use actual coordinates-->
         </map>
         </div>
 
         <br>
-        <div id="legend-marker">
-            <p>
-                🟥<a href="#rollercoaster">Rollercoaster</a>&nbsp;&nbsp;
-                🟩<a href="#spaceship">Spaceship</a>&nbsp;&nbsp;
-                🟧<a href="#carousel">Carousel</a>&nbsp;&nbsp;
-                🟪<a href="#cup-ride">Cup ride</a>&nbsp;&nbsp;
-                ⏹️<a href="#restraunt">Restraunt</a>&nbsp;&nbsp;
-            </p>
-            <p>
-                ⬛<a href="#haunted-house">Haunted house</a>&nbsp;&nbsp;
-                🟨<a href="#ferris-wheel">Ferris wheel</a>&nbsp;&nbsp;
-                🟦<a href="#boat-ride">Boat ride</a>&nbsp;
-                🟫<a href="#circus">Circus</a>&nbsp;&nbsp;
-                ❎<a href="#playground">Playground</a>
-            </p>
-        </div>
+        <table id="legend-marker">
+            <tr>
+                <td>🟥<a href="#rollercoaster">Rollercoaster</a></td>
+                <td>🟩<a href="#spaceship">Spaceship</a></td>
+                <td>🟧<a href="#carousel">Carousel</a></td>
+                <td>🟪<a href="#cup-ride">Cup ride</a></td>
+                <td>⏹️<a href="#restraunt">Restraunt</a></td>
+            </tr>
+            <tr>
+                <td>⬛<a href="#haunted-house">Haunted house</a></td>
+                <td>🟨<a href="#ferris-wheel">Ferris wheel</a></td>
+                <td>🟦<a href="#boat-ride">Boat ride</a></td>
+                <td>🟫<a href="#circus">Circus</a></td>
+                <td>❎<a href="#playground">Playground</a></td>
+            </tr>
+        </table>
 
         <br>
         <div calss="attraction-interactable" id="rollercoaster">

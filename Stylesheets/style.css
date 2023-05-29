@@ -10,7 +10,13 @@ canvas {
 #legend-marker{
   background-color: whitesmoke;
   color: black;
-  border: 1px solid black;
-  width: 550px;
+  border: 2px rgba(0, 0, 0, 0.4) solid;
+  border-spacing: 10px;
+  width: auto;
   height: auto;
+}
+
+#wacky-world-map{
+  height: 50%;
+  width: 50%;
 }
