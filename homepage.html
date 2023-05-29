@@ -1,81 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<div id="homepageimage">
-			<body background="Assets\Images\pexels-felix-mittermeier-956999.jpg">
-			<p style = "text-align:center;color:white;font-size:400%">Buy Tickets</p>
-		</div>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
 		<style>
-			table, th, td {
-			  border: 1px solid black;
-			  background-color: black;
+			table,
+			th,
+			td {
+				border: 1px solid black;
+				background-color: black;
 			}
-			</style>
-		
-		<table style = "width:100%">
-			<tr>
-				<td style = "text-align:center;color:rgb(161, 57, 57);font-size:200%">Bronze</td>
-				<td style = "text-align:center;color:rgb(141, 137, 137);font-size:200%">Silver</td>
-				<td style = "text-align:center;color:rgb(181, 190, 6);font-size:200%">Gold</td>
-			</tr>
-			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">$5.00</td>
-				<td style = "text-align:center;color:white;font-size:200%">$15.00</td>
-				<td style = "text-align:center;color:white;font-size:200%">$40.00</td>
-			</tr>
-			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">ticket for 6 rides</td>
-				<td style = "text-align:center;color:white;font-size:200%">ticket for 12 rides</td>
-				<td style = "text-align:center;color:white;font-size:200%">Unlimited rides</td>
-			</tr>
-			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">No discount</td>
-				<td style = "text-align:center;color:white;font-size:200%;">20% discount at any 3 eateries</td>
-				<td style = "text-align:center;color:white;font-size:200%">50% discount at all eateries</td>
-			</tr>
-			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">Wait in line</td>
-				<td style = "text-align:center;color:white;font-size:200%">Wait in line</td>
-				<td style = "text-align:center;color:white;font-size:200%">Express entry</td>
-			</tr>
-
-		</table>
-		<h1 style = "text-align:center;color:white;font-size:400%">About Us</h1>
-		<div style = "position:relative; left:1050px; top:200px; color:white; font-size:400%">Welcome to Wacky World</div>
-		<div style = "position:relative; left:1050px; top:250px; color:white; font-size:400%">Where dreams come true!</div>
-		<img src = "Assets\Images\cross.jpg.jpg"width="1000" height="500">
-		<h2 style = "text-align:center;color:white;font-size:400%">Our Partners</h2>
-
-	</head>
-	<img src = "Assets\Images\Wacky_World_Logo.png"width="500" height="500">
-	<img src = "Assets\Images\Wacky_World_Logo.png"width="500" height="500">
-	<img src = "Assets\Images\Wacky_World_Logo.png"width="500" height="500">
-	<img src = "Assets\Images\Wacky_World_Logo.png"width="500" height="500">
-	<center>
-		<img src = "Assets\Images\cross.jpg.jpg"width="1000" height="500">
-	</center>
-
-	<style>
-		table, th, td {
-		  border: 1px solid black;
-		  background-color: black;
-		}
+			body,
+			html {
+				margin: 0;
+				font-family: Arial, sans-serif;
+				height: 100%;
+			}
+			.container {
+				position: relative;
+				text-align: center;
+				width: 100%;
+				height: 100vh;
+				overflow: hidden;
+			}
+			.background-image {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: 0.8;
+			}
+			.text-container {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.company-name {
+				font-size: 48px;
+				font-weight: bold;
+				color: #000000;
+				margin-bottom: 10px;
+			}
+			.slogan {
+				font-size: 24px;
+				color: #000000;
+			}
+			.attractions-section {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 50px;
+			}
+			.attractions-text {
+				flex: 1;
+				text-align: center;
+			}
+			.attractions-title {
+				font-size: 36px;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			.attractions-body {
+				font-size: 16px;
+			}
+			.attractions-image {
+				flex: 1;
+				text-align: right;
+				margin-left: -200px; /* Adjust this value to move the image box horizontally */
+			}
+			.image-box {
+				width: 100%;
+				height: 0;
+				padding-bottom: 56.25%;
+				position: relative;
+			}
+			.image-box img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.signup-section {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 50px;
+			}
+			.signup-box {
+				width: 400px;
+				padding: 30px;
+				background-color: #f1f1f1;
+				border-radius: 5px;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+			.signup-title {
+				font-size: 36px;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			.input-container {
+				position: relative;
+				margin-bottom: 25px;
+			}
+			.input-field {
+				font-size: 16px;
+				padding: 10px;
+				width: 100%;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+			.input-label {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				font-size: 16px;
+				color: #999;
+				transition: 0.3s;
+			}
+			.input-field:focus + .input-label,
+			.input-field:not(:placeholder-shown) + .input-label {
+				top: -20px;
+				left: 5px;
+				font-size: 12px;
+				color: #555;
+			}
+			.signup-button {
+				font-size: 16px;
+				padding: 10px 20px;
+				background-color: #4caf50;
+				color: #fff;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: 0.3s;
+			}
+			.signup-button:hover {
+				background-color: #45a049;
+			}
 		</style>
-	 <table style = "width:100%">
+	</head>
+	<body background="Assets\Images\pexels-felix-mittermeier-956999.jpg">
+		<div class="container">
+			<img
+				src="your-image-url.jpg"
+				alt="Background Image"
+				class="background-image"
+			/>
+			<div class="text-container">
+				<div class="company-name">Your Company Name</div>
+				<div class="slogan">Your Company Slogan</div>
+			</div>
+		</div>
+		<div class="attractions-section">
+			<div class="attractions-text">
+				<div class="attractions-title">Our Attractions</div>
+				<div class="attractions-body">
+					Attractions description goes here.
+				</div>
+			</div>
+			<div class="attractions-image">
+				<div class="image-box">
+					<img
+						src="your-attractions-image-url.jpg"
+						alt="Attractions Image"
+					/>
+				</div>
+			</div>
+		</div>
+		<div id="homepageimage">
+			<p style="text-align: center; color: white; font-size: 400%">
+				Buy Tickets
+			</p>
+		</div>
+		<table style="width: 100%">
 			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">About Us</td>
-				<td style = "text-align:center;color:white;font-size:200%">Our Attractions</td>
-				<td style = "text-align:center;color:white;font-size:200%">Buy Tickets</td>
-			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">Sign Up</td>
-				<td style = "text-align:center;color:white;font-size:200%">Follow Us</td>
-				<td style = "text-align:center;color:white;font-size:200%">Location</td>
+				<td
+					style="
+						text-align: center;
+						color: rgb(161, 57, 57);
+						font-size: 200%;
+					"
+				>
+					Bronze
+				</td>
+				<td
+					style="
+						text-align: center;
+						color: rgb(141, 137, 137);
+						font-size: 200%;
+					"
+				>
+					Silver
+				</td>
+				<td
+					style="
+						text-align: center;
+						color: rgb(181, 190, 6);
+						font-size: 200%;
+					"
+				>
+					Gold
+				</td>
 			</tr>
 			<tr>
-				<td style = "text-align:center;color:white;font-size:200%">Theme park map</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					$5.00
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					$15.00
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					$40.00
+				</td>
 			</tr>
-	
-	
+			<tr>
+				<td style="text-align: center; color: white; font-size: 200%">
+					ticket for 6 rides
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					ticket for 12 rides
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Unlimited rides
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; color: white; font-size: 200%">
+					No discount
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					20% discount at any 3 eateries
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					50% discount at all eateries
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Wait in line
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Wait in line
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Express entry
+				</td>
+			</tr>
+		</table>
+		<h1 style="text-align: center; color: white; font-size: 400%">
+			About Us
+		</h1>
+		<div
+			style="
+				position: relative;
+				left: 1050px;
+				top: 200px;
+				color: white;
+				font-size: 400%;
+			"
+		>
+			Welcome to Wacky World
+		</div>
+		<div
+			style="
+				position: relative;
+				left: 1050px;
+				top: 250px;
+				color: white;
+				font-size: 400%;
+			"
+		>
+			Where dreams come true!
+		</div>
+		<img src="Assets\Images\cross.jpg.jpg" width="1000" height="500" />
+		<h2 style="text-align: center; color: white; font-size: 400%">
+			Our Partners
+		</h2>
+		<img
+			src="Assets\Images\Wacky_World_Logo.png"
+			width="500"
+			height="500"
+		/>
+		<img
+			src="Assets\Images\Wacky_World_Logo.png"
+			width="500"
+			height="500"
+		/>
+		<img
+			src="Assets\Images\Wacky_World_Logo.png"
+			width="500"
+			height="500"
+		/>
+		<img
+			src="Assets\Images\Wacky_World_Logo.png"
+			width="500"
+			height="500"
+		/>
+		<img src="Assets\Images\cross.jpg.jpg" width="1000" height="500" />
+		<table style="width: 100%">
+			<tr>
+				<td style="text-align: center; color: white; font-size: 200%">
+					About Us
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Our Attractions
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Buy Tickets
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Sign Up
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Follow Us
+				</td>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Location
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; color: white; font-size: 200%">
+					Theme park map
+				</td>
+			</tr>
+		</table>
+		<div class="signup-section">
+			<div class="signup-box">
+				<form action="your-signup-url" method="post">
+					<div class="signup-title">Sign Up</div>
+					<div class="input-container">
+						<input
+							type="text"
+							class="input-field"
+							id="username"
+							name="username"
+							required
+						/>
+						<label for="username" class="input-label"
+							>Username</label
+						>
+					</div>
+					<div class="input-container">
+						<input
+							type="password"
+							class="input-field"
+							id="password"
+							name="password"
+							required
+						/>
+						<label for="password" class="input-label"
+							>Password</label
+						>
+					</div>
+					<button type="submit" class="signup-button">Sign Up</button>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
-
-
