@@ -7,3 +7,17 @@ canvas {
   background-color: darkblue;
   display: block;
 }
+
+#legend-marker{
+  background-color: whitesmoke;
+  color: black;
+  border: 2px rgba(0, 0, 0, 0.4) solid;
+  border-spacing: 10px;
+  width: auto;
+  height: auto;
+}
+
+#wacky-world-map{
+  height: 50%;
+  width: 50%;
+}
