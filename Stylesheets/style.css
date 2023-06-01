@@ -47,18 +47,24 @@ canvas {
   color: black;
   border: 2px rgba(0, 0, 0, 0.4) solid;
   border-spacing: 10px;
-  width: auto;
+  width: 50%;
   height: auto;
+  margin: auto;
 }
 
 #wacky-world-map{
   height: 50%;
   width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .attraction-section{
   display: none;
   color: white;
+  margin: auto;
+  width: 25%;
 }
 
 .attraction-section h1{
