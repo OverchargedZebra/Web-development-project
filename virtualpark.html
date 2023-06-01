@@ -10,6 +10,7 @@
 			type="image/x-icon"
 		>
         <link rel="stylesheet" href="stylesheets/style.css">
+        <script src="code/Virtual-park.js"></script>
 
         <title>Virtual park</title>
 
@@ -135,16 +136,5 @@
             <img src="assets/images/temp-image.jpg" alt="Playground" width="500" height="500">
         </section>
     </div>
-        <script>
-            function showSection(sectionID) {
-                var sections = document.getElementsByTagName("section");
-                for (var i = 0; i < sections.length; i++) {
-                    sections[i].style.display = "none";
-                }
-
-                var section = document.getElementById(sectionID);
-                section.style.display = "block";
-            }
-        </script>
     </body>
 </html>
