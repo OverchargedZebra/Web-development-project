@@ -3,6 +3,9 @@ ul.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
   background-color: #333;
 }
 
@@ -22,6 +25,11 @@ ul.navbar li a:hover {
   background-color: #111;
 }
 
+.main{
+  margin-top: 30px;
+  height: 1500px;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -31,6 +39,8 @@ canvas {
   background-color: darkblue;
   display: block;
 }
+
+/*virtual park working space */
 
 #legend-marker{
   background-color: whitesmoke;
@@ -45,3 +55,18 @@ canvas {
   height: 50%;
   width: 50%;
 }
+
+.attraction-section{
+  display: none;
+  color: white;
+}
+
+.attraction-section h1{
+  font-size: 48px;
+}
+
+.attraction-section p{
+  font-size: 24px;
+}
+
+/* virtual park working space end */
