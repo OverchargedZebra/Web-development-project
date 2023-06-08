@@ -5,5 +5,5 @@ function showSection(sectionID) {
 	}
 
 	var section = document.getElementById(sectionID);
-	section.style.display = "block";
+	section.style.display = "grid";
 }
