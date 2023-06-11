@@ -68,5 +68,13 @@ canvas {
 .attraction-section p{
   font-size: 24px;
 }
+#faq
+h1
+{
+font-family: Arial;
+font-size: 32px;
+color:White(000000);
+    
+}
 
 /* virtual park working space end */
