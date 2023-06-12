@@ -2,24 +2,24 @@
 h1 {
     font: Arial;
     color: white;
-    font-size: 36;
+    font-size: 48;
 }
 
 h2 {
     font: Arial;
     color: white;
-    font-size: 24;
+    font-size: 36;
 }
 h3 {
     font: Arial;
     color: white;
-    font-size: 18;
+    font-size: 24;
 }
 
 body {
     font: Arial;
     color: white;
-    font-size: 12;
+    font-size: 18;
 }
 
 
@@ -36,7 +36,7 @@ ul.navbar {
 }
 
 ul.navbar li {
-  float: center;
+  float: left;
 }
 
 ul.navbar li a {
