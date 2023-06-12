@@ -1,3 +1,29 @@
+/* Universal font sizes and colours */
+h1 {
+    font: Arial;
+    color: white;
+    font-size: 48;
+}
+
+h2 {
+    font: Arial;
+    color: white;
+    font-size: 36;
+}
+h3 {
+    font: Arial;
+    color: white;
+    font-size: 24;
+}
+
+body {
+    font: Arial;
+    color: white;
+    font-size: 18;
+}
+
+
+/* navbar */
 ul.navbar {
   list-style-type: none;
   margin: 0;
