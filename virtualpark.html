@@ -10,6 +10,7 @@
 			type="image/x-icon"
 		>
         <link rel="stylesheet" href="stylesheets/style.css">
+        <script src="code/Virtual-park.js"></script>
 
         <title>Virtual park</title>
 
@@ -44,7 +45,7 @@
                 <td>🟩<a href="#spaceship" onclick="showSection('spaceship')"">Spaceship</a></td>
                 <td>🟧<a href="#carousel" onclick="showSection('carousel')"">Carousel</a></td>
                 <td>🟪<a href="#cup-ride" onclick="showSection('cup-ride')"">Cup ride</a></td>
-                <td>⏹️<a href="#restraunt" onclick="showSection('restraunt')"">Restraunt</a></td>
+                <td>⏹️<a href="#restaurant" onclick="showSection('restaurant')"">Restaurant</a></td>
             </tr>
             <tr>
                 <td>⬛<a href="#haunted-house" onclick="showSection('haunted-house')"">Haunted house</a></td>
@@ -120,11 +121,11 @@
         </section>
 
         
-        <section id="restraunt" class="attraction-section">
-            <h1>Restraunt</h1>
+        <section id="restaurant" class="attraction-section">
+            <h1>restaurant</h1>
             <p>Yum!</p>
             <p>status: <strong>Active</strong></p>
-            <img src="assets/images/temp-image.jpg" alt="Restraunt" width="500" height="500">
+            <img src="assets/images/temp-image.jpg" alt="restaurant" width="500" height="500">
         </section>
 
         
@@ -135,16 +136,5 @@
             <img src="assets/images/temp-image.jpg" alt="Playground" width="500" height="500">
         </section>
     </div>
-        <script>
-            function showSection(sectionID) {
-                var sections = document.getElementsByTagName("section");
-                for (var i = 0; i < sections.length; i++) {
-                    sections[i].style.display = "none";
-                }
-
-                var section = document.getElementById(sectionID);
-                section.style.display = "block";
-            }
-        </script>
     </body>
 </html>

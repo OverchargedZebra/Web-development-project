@@ -1,3 +1,29 @@
+/* Universal font sizes and colours */
+h1 {
+    font: Arial;
+    color: white;
+    font-size: 48;
+}
+
+h2 {
+    font: Arial;
+    color: white;
+    font-size: 36;
+}
+h3 {
+    font: Arial;
+    color: white;
+    font-size: 24;
+}
+
+body {
+    font: Arial;
+    color: white;
+    font-size: 18;
+}
+
+
+/* navbar */
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -43,30 +69,42 @@ canvas {
 /*virtual park working space */
 
 #legend-marker{
-  background-color: whitesmoke;
-  color: black;
-  border: 2px rgba(0, 0, 0, 0.4) solid;
+  display: grid;
+  background: url(assets/images/pexels-felix-mittermeier-956999.jpg);
   border-spacing: 10px;
-  width: auto;
   height: auto;
+  place-items: center;
+  align-content: center;
+}
+
+#legend-marker a{
+  font-size: 24px;
+  color: white;
 }
 
 #wacky-world-map{
   height: 50%;
   width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .attraction-section{
   display: none;
   color: white;
+  place-items: center;
+  align-content: center;
 }
 
 .attraction-section h1{
   font-size: 48px;
+  -webkit-text-stroke: 0.2px #000000;
 }
 
 .attraction-section p{
   font-size: 24px;
+  -webkit-text-stroke: 0.2px #000000;
 }
 
 /* virtual park working space end */
