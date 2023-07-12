@@ -106,5 +106,9 @@ canvas {
   font-size: 24px;
   -webkit-text-stroke: 0.2px #000000;
 }
-
+.dropdown-content{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
 /* virtual park working space end */
