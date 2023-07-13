@@ -1,3 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    body{
+        background: white;
+        height: 100%;
+        padding:8px;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.3em;
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+
+}
+
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    body{
+        background: white;
+        height: 100%;
+        padding:8px;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.4em;
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    body{
+        background: white;
+        height: 100%;
+        padding:8px;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 2em;
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+}
 /* Universal font sizes and colours */
 h1 {
     font: Arial;
