@@ -14,6 +14,7 @@
 
     <style>
        
+       
 		div.a {
 			text-align: left;
 		}
@@ -23,14 +24,14 @@
        background-repeat: no-repeat;
 		}
 		.dropdown {
-			position: relative;
+			position: absolute;
 			display: inline-block;
 		}
 		.dropdown-content {
 			display: none;
-			position: absolute;
-			background-color: #f9f9f9;
-			min-width: 160px;
+            position: relative
+			background-color: gray;
+			min-width: 800px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			padding: 12px 485px;
 			z-index: 1;
@@ -38,8 +39,11 @@
 		.dropdown:hover .dropdown-content {
 		display: block;
 		}
+        .dropdown-content p{
+            color: white;
+        }
 		#FAQ {
-		background-color: lightblue;
+		background-color: dimgray;
 		color: black;
 		padding: 40px;
 		text-align: center;
@@ -51,6 +55,8 @@
 		background-color: black;
 		padding: 10px 10px;
 		} 
+        #FAQ-headings :hover {background-color: gray;}
+        
     </style>
 	</head>
     <body>
@@ -68,21 +74,43 @@
   
 		<h2 id="FAQ" style= "text-align:center;color:white";>FAQ</h2>
 
-		<table style="text-align:center;color:white;width:100%;" id="FAQ-headings">
-			<tr><td style='font-size:30px;'>&#8853;  Mangement</td></tr>
-			<tr><td style='font-size:30px;'>&#8853;  Rides    </td></tr>
-			<tr><td style='font-size:30px;'>&#8853;  Booking  </td></tr>
-			<tr><td style='font-size:30px;'>&#8861;  
-			<section class="dropdown">
-				<span>Other</span>
-				<section style= "color:black "class="dropdown-content">
-				<p>Question</p>
-				<p>Answer</p>
-				<p>Question</p>
-				<p>Answer</p>
-				</section>
-			</section>
-			</td></tr>
+		<table style="text-align:center;color:white;width:100%;" id="FAQ-headings" >
+            
+        <tr><td style='font-size:30px;'>&#8853; 
+        <section class= "dropdown">
+        <span> Management</span>
+        <section class= "dropdown-content">   
+        <p>Q : Who manages the operations of the theme park?</p>
+        <p>A : it is managed by a team of experienced professionals.</p>
+        <p>Q : how is guest safety ensured within the park?</p>
+        <p>A : We have trained staff all the time and they respond to emergencies.</p>
+        </section></section></td></tr>
+            
+        <tr><td style='font-size:30px;'>&#8853; 
+        <section class= "dropdown">
+        <span> Rides</span>
+        <section class= "dropdown-content"> 
+        <p>Q :What often are the rides inspected?</p>
+        <p>A : Our rides undergo rigorous inspections on a daily, weekly and monthly basis.</p>
+        </section></section></td></tr>
+            
+        <tr><td style='font-size:30px;'>&#8853;  
+        <section class= "dropdown">
+        <span> Booking</span>
+        <section class= "dropdown-content"> 
+        <p>Q :How can I book for rides?</p>
+        <p>A : Thorugh visited our website or coming to the booking counter on the site.</p>
+        </section></section></td></tr>  
+            
+        <tr><td style='font-size:30px;'>&#8853;  
+        <section class="dropdown">
+        <span>Other</span>
+        <section class="dropdown-content" >
+        <p>Q : What are the parks opening hours?</p>
+        <p>A : The park is open from 9am to 6pm.</p>
+        <p>Q : Are pets allowed in the park? </p>
+        <p>A : No but we do have a day care section for them where you can leave them.</p>
+        </section></section></td></tr>
 		</table>
     </div>
     </body>
