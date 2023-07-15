@@ -49,8 +49,6 @@ const handleOnMove = (e) => {
 	);
 };
 
-/* -- Had to add extra lines for touch events -- */
-
 window.onmousedown = (e) => handleOnDown(e);
 
 window.ontouchstart = (e) => handleOnDown(e.touches[0]);
