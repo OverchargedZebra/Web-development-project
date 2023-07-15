@@ -90,11 +90,18 @@ canvas {
   margin-right: auto;
 }
 
-.attraction-section{
+.attraction-section {
   display: none;
   color: white;
   place-items: center;
   align-content: center;
+  background: rgba(11,19,30,255);
+  background-position: center;
+  height: 70vh;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0rem;
 }
 
 .attraction-section h1{
@@ -105,6 +112,22 @@ canvas {
 .attraction-section p{
   font-size: 24px;
   -webkit-text-stroke: 0.2px #000000;
+}
+
+.image-track > img{
+ width: 40vmin;
+ height:40vmin;
+ object-fit: cover;
+ object-position: center;
+}
+
+.image-track{
+  display: flex;
+  gap: 4vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(25%, 0%);
+  user-select: none;
 }
 
 /* virtual park working space end */
