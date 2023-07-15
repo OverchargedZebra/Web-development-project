@@ -101,8 +101,7 @@ canvas {
 	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
-	border: 5px solid black;
-	border-radius: 5px;
+	border: 15px solid black;
   }
 
 .attraction-section h1{
