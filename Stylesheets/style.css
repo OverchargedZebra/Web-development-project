@@ -1,43 +1,238 @@
+<<<<<<< Updated upstream
 ul.navbar {
   list-style-type: none;
+=======
+* {
+    box-sizing: border-box;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+    .container {
+	display: grid;
+    grid-column: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 100px;    
+}
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+    .responsive {
+      width: 100%;
+      height: auto;
+        
+    }
+    .acontainer {
+     display: grid;
+     align-items: center; 
+     grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 5px;
+    }
+
+    aimg {
+      max-width: 50%;
+      max-height:50%;
+    }
+    .fade-in-text{
+				animation: fadeIn 6s;
+                background-color: black;
+                opacity: 70%;
+			}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    body{
+        background: white;
+        height: 100%;
+        padding:8px;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 32px;
+        color: white;
+    }
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: white;
+    }
+    
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: white;
+    }
+    
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: ghostwhite;
+    }
+
+}
+
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    body{
+        background: white;
+        height: 100%;
+        padding:8px;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 42px;
+        color: white;
+    }
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 32px;;
+        color: white;
+    }
+    
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 22px;;
+        color: white;
+    }
+    
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 17px;;
+        color: white;
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    body{
+        background: white;
+        height: 100%;
+        padding:8px;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 82px;
+        color: white;
+    }
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 42px;;
+        color: white;
+    }
+    
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 28px;;
+        color: white;
+    }
+    
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 20px;;
+        color: white;
+    }
+}
+
+* {box-sizing: border-box;}
+
+body { 
+>>>>>>> Stashed changes
   margin: 0;
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header */
+.header {
   overflow: hidden;
-  top: 0;
-  width: 100%;
-  position: fixed;
-  background-color: #333;
+  background-color: #505050;
+  padding: 4px 2px;
 }
 
-ul.navbar li {
-  float: left;
-}
-
-ul.navbar li a {
-  display: block;
+.header a {
+  float: center;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+    align-content: center;
+  padding: 12px;
   text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 2px;
+}
 }
 
-ul.navbar li a:hover {
-  background-color: #111;
+.header a:hover {
+  background-color: #505050;
+  color: black;
 }
 
-.main{
-  margin-top: 30px;
-  height: 1500px;
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+.header-right {
+  float: right;
 }
 
-canvas {
-  background-color: darkblue;
-  display: block;
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
 }
 
 /*virtual park working space */
