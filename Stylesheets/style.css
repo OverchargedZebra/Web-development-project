@@ -74,6 +74,13 @@ padding: 20px;
   background-color: #505050;
   color: white;
 }
+<<<<<<< Updated upstream
+=======
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+>>>>>>> Stashed changes
 
 /*Mobile-------------------------------------*/
 @media only screen and (max-width: 570px){
