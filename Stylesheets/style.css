@@ -248,11 +248,13 @@ canvas {
 
 .attraction-section h1 {
 	font-size: 48px;
+    color: white;
 	-webkit-text-stroke: 0.2px #000000;
 }
 
 .attraction-section p {
 	font-size: 24px;
+    color: white;
 	-webkit-text-stroke: 0.2px #000000;
 }
 .dropdown-content {
