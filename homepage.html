@@ -1,438 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link
+        <link
 			rel="icon"
 			href="assets/images/Wacky_World_Logo.png"
 			type="image/x-icon"
 		>
         <link rel="stylesheet" href="stylesheets/style.css">
-		<title>Home Page</title>
-		<style>
-			table,th,td {
-				border: 1px solid black;
-				background-color: black;
-			}
+        <script src="code/Virtual-park.js"></script>
 
-			body{
-				background: url(assets/images/pexels-felix-mittermeier-956999.jpg);
-			}
+        <title>Virtual park</title>
+        
+        <style>
+            body{
+                background: url(assets/images/pexels-felix-mittermeier-956999.jpg);
+            }
+               /* table */
+    .columns {
+      float: left;
+      width: 33.3%;
+      padding: 8px;
+    background-color: white;
+    opacity: 85%;
+    font-size: 20px;
+    }
 
-			body,html {
-				margin: 0;
-				font-family: Arial, sans-serif;
-				height: 100%;
-			}
-			.container {
-				position: relative;
-				text-align: center;
-				width: 100%;
-				height: 100vh;
-				overflow: hidden;
-			}
-			.background-image {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				opacity: 0.8;
-			}
-			.text-container {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				color: white;
-			}
-			.company-name {
-				font-size: 48px;
-				font-weight: bold;
-				color: #ffffff;
-				margin-bottom: 10px;
-			}
-			.slogan {
-				font-size: 24px;
-				color: #ffffff;
-			}
-			.attractions-section {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				padding: 50px;
-			}
-			.attractions-text {
-				flex: 1;
-				text-align: center;
-				color:#ffffff;
-			}
-			.attractions-title {
-				font-size: 36px;
-				font-weight: bold;
-				margin-bottom: 20px;
-				color: #ffffff;
-			}
-			.attractions-body {
-				font-size: 16px;
-			}
-			.attractions-image {
-				flex: 1;
-				text-align: right;
-				margin-left: -200px; /* Adjust this value to move the image box horizontally */
-			}
-			.image-box {
-				width: 100%;
-				height: 0;
-				padding-bottom: 56.25%;
-				position: relative;
-			}
-			.image-box img {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			.signup-section {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				padding: 50px;
-			}
-			.signup-box {
-				width: 400px;
-				padding: 30px;
-				background-color: #f1f1f1;
-				border-radius: 5px;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-				text-align: center;
-			}
-			.signup-title {
-				font-size: 36px;
-				font-weight: bold;
-				margin-bottom: 20px;
-			}
-			.input-container {
-				position: relative;
-				margin-bottom: 25px;
-			}
-			.input-field {
-				font-size: 16px;
-				padding: 10px;
-				width: 100%;
-				border: 1px solid #ccc;
-				border-radius: 4px;
-				box-sizing: border-box;
-			}
-			.input-label {
-				position: absolute;
-				top: 10px;
-				left: 10px;
-				font-size: 16px;
-				color: #999;
-				transition: 0.3s;
-			}
-			.input-field:focus + .input-label,
-			.input-field:not(:placeholder-shown) + .input-label {
-				top: -20px;
-				left: 5px;
-				font-size: 12px;
-				color: #555;
-			}
-			.signup-button {
-				font-size: 16px;
-				padding: 10px 20px;
-				background-color: #4caf50;
-				color: #fff;
-				border: none;
-				border-radius: 4px;
-				cursor: pointer;
-				transition: 0.3s;
-			}
-			.signup-button:hover {
-				background-color: #45a049;
-			}
-			.fade-in-text{
-				animation: fadeIn 6s;
-			}
-			@keyframes fadeIn {
-  			0% { opacity: 0; }
-			100% { opacity: 1; }
-			}
-		</style>
-	</head>
-	<body>
-		<ul class="navbar">
-            <li> <img src="assets/images/Wacky_World_Logo.png" width="50" height="50" alt="Wacky_World_Logo"></li>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="faq.html">Help Center</a></li>
-            <li><a href="virtualpark.html">Virtual Park</a></li>
-        </ul>
-		<div class="main">
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+
+    .price .theader {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+        opacity: 100%;
+    }
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .price .grey {
+      background-color: #eee;
+      font-size: 20px;
+    }
+
+    .button {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+    }
+
+                
+        </style>
+    </head>
+
+    <body>
+         
+      
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="homepage.html" class="active"> <img src="assets/images/Wacky_World_Logo.png" width="50" height="50" alt="Wacky_World_Logo">      </a>
+  <a href="faq.html">Help Center</a>
+  <a href="virtualpark.html">Virtual Park</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+		
 		<div class="container">
 			<img
-				src="your-image-url.jpg"
-				alt="Background Image"
-				class="background-image"
+				src="assets/images/WACKYWORLD.png"
+                width= "100%"
 			>
-			<div class="text-container">
-				<div class="company-name">Wacky World</div>
-				<div class="slogan">Your Company Slogan</div>
-			</div>
-		</div>
-		<div class="attractions-section">
-			<div class="attractions-text">
-				<div class="attractions-title">Our Attractions</div>
-				<div class="attractions-body">
-					Attractions description goes here.
-				</div>
-			</div>
-			<div class="attractions-image">
-				<div class="image-box">
-					<img
-						src="your-attractions-image-url.jpg"
-						alt="Attractions Image"
-					>
-				</div>
-			</div>
-		</div>
-		<div id="homepageimage">
-			<p style="text-align: center; color: white; font-size: 400%">
-				Buy Tickets
-			</p>
-		</div>
-		<div class = "fade-in-text">
-		<table style="width: 100%;">
-			<tr>
-				<td
-					style="
-						text-align: center;
-						color: rgb(161, 57, 57);
-						font-size: 200%;
-						animation-name: fadeIn;
-						animation-duration: 2s;
-					"
-				>
-					Bronze
-				</td>
-				
-				<td
-					style="
-						text-align: center;
-						color: rgb(141, 137, 137);
-						font-size: 200%;
-						animation-name: fadeIn;
-						animation-duration: 2s;
-					"
-				>
-					Silver
-				</td>
-				<td
-					style="
-						text-align: center;
-						color: rgb(181, 190, 6);
-						font-size: 200%;
-						animation-name: fadeIn;
-						animation-duration: 2s;
-					"
-				>
-					Gold
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					$5.00
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					$15.00
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					$40.00
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					ticket for 6 rides
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					ticket for 12 rides
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					Unlimited rides
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					No discount
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					20% discount at any 3 eateries
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					50% discount at all eateries
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					Wait in line
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					Wait in line
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%;
-				animation-name: fadeIn;
-				animation-duration: 2s;">
-					Express entry
-				</td>
-			</tr>
-			</table>
-		</div>
-		<h1 style="text-align: center; color: white; font-size: 400%">
+            <div class="centered">
+                <h1>Wacky World</h1>
+				<h3>Journey Beyond the Stars: Where Dreams Take Flight!</h3>
+            </div>
+            
+            </div>
+        
+                     <h2 class= "container">Our attractions</h2>
+       <div class="acontainer">
+        <img src="assets/images/space_rollercoaster.jpg"
+             height = "75%" width = "75%">
+          <p>Enjoy a wide variety of rides, from rollercoasters to carousels. 
+              Hungry? Our cafe has a plethora of cuisines from all around the world.</p>
+      </div>
+
+        <h2 class="container">Buy Tickets</h2>
+        <li></li>
+    <div class="columns">
+  <ul class="price">
+    <li class="theader">Bronze</li>
+    <li class="grey">$ 5.00</li>
+    <li>6 Rides</li>
+    <li>No Discount at eateries</li>
+    <li>Normal Entry</li>
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="theader" style="background-color:#04AA6D">Silver</li>
+    <li class="grey">$10.00</li>
+    <li>12 Rides</li>
+    <li>20% off at eateries</li>
+    <li>Normal Entry</li>
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="theader">Gold</li>
+    <li class="grey">$30.00</li>
+    <li>Unlimited Rides</li>
+    <li>50% off at all eateries</li>
+    <li>Express Entry</li>
+    <li class="grey"><a href="#" class="button">Buy</a></li>
+  </ul>
+</div>
+        
+
+<li></li>
+            <h1>
 			About Us
 		</h1>
-		<div
-			style="
-				position: relative;
-				left: 1050px;
-				top: 200px;
-				color: white;
-				font-size: 400%;
-			"
-		>
-			Welcome to Wacky World
-		</div>
-		<div
-			style="
-				position: relative;
-				left: 1050px;
-				top: 250px;
-				color: white;
-				font-size: 400%;
-			"
-		>
-			Where dreams come true!
-		</div>
-		<img src="assets/images/temp-image.jpg" width="1000" height="500" alt="logo-pic">
-		<div class="signup-section">
-			<div class="signup-box">
-				<form action="your-signup-url" method="post">
-					<div class="signup-title">Sign Up</div>
-					<div class="input-container">
-						<input
-							type="text"
-							class="input-field"
-							id="username"
-							name="username"
-							required
-						>
-						<label for="username" class="input-label">Username</label>
-					</div>
-					<div class="input-container">
-						<input
-							type="password"
-							class="input-field"
-							id="password"
-							name="password"
-							required
-						>
-						<label for="password" class="input-label">Password</label>
-					</div>
-					<button type="submit" class="signup-button">Sign Up</button>
-				</form>
-			</div>
-		</div>
+         <div class = acontainer>   
+        <div class = aimg>
+                <img src = "Assets/Images/3.png">
+                </div>
+            <h3>Wacky World is a space based theme park. Ready for an intergalactic adventure? Captain Rogers is awaiting you to join him in his quest to explore the galaxy. Help him by exploring all areas of the theme park.</h3>
+        </div>
+		
 		<h2 style="text-align: center; color: white; font-size: 400%">
 			Our Partners
 		</h2>
 		<div class = "fade-in-text">
 		<img
 			src="assets/images/Wacky_World_Logo.png"
-			width="500"
-			height="500"
+			width="23%"
+			height="23%"
 			alt="logo-pic"
 			animation-name: fadeIn;
 			animation-duration: 7s;>
-		>
 		<img
 			src="assets/images/Wacky_World_Logo.png"
-			width="500"
-			height="500"
+			width="23%"
+			height="23%"
 			alt="logo-pic"
 			animation-name: fadeIn;
 			animation-duration: 7s;>
-		>
 		<img
 			src="assets/images/Wacky_World_Logo.png"
-			width="500"
-			height="500"
+			width="23%"
+			height="23%"
 			alt="logo-pic"
 			animation-name: fadeIn;
 			animation-duration: 7s;>
-		>
 		<img
 			src="assets/images/Wacky_World_Logo.png"
-			width="500"
-			height="500"
+			width="23%"
+			height="23%"
 			alt="logo-pic"
 			animation-name: fadeIn;
 			animation-duration: 7s;>
-		>
 		</div>
-		<img src="assets/images/temp-image.jpg" width="1000" height="500" alt="about us">
-		<table style="width: 100%">
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%">
-					About Us
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%">
-					Our Attractions
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%">
-					Buy Tickets
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%">
-					Sign Up
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%">
-					Follow Us
-				</td>
-				<td style="text-align: center; color: white; font-size: 200%">
-					Location
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center; color: white; font-size: 200%">
-					Theme park map
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
-	</body>
+            </body>
+    <footer>
+    <div class="footer">
+        <p>for more information contact us at:<br>
+  <a href="mailto:wackyworld@example.com">wackyworld@example.com</a></p></div>
+    </footer>
+   
 </html>
