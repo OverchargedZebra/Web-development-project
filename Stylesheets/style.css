@@ -1,259 +1,280 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
- }
-
+	padding: 0 !important;
+	margin: 0 !important;
+}
 
 /*Mobile-------------------------------------*/
-@media only screen and (max-width: 570px){
-    body{
-        background: white;
-        height: 100%;
-        padding:8px;
-    }
-    
-    h1{
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 1.3em;
-        color: white;
-    }
-    
-    h2{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 20px;;
-        color: black;
-    }
-    
-    h3{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 17px;;
-        color: black;
-    }
-    
-    p{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 15px;;
-        color: black;
-    }
+@media only screen and (max-width: 570px) {
+	body {
+		background: white;
+		height: 100%;
+		padding: 8px;
+	}
 
+	h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		font-size: 1.3em;
+		color: white;
+	}
+
+	h2 {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: black;
+	}
+
+	h3 {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: black;
+	}
+
+	p {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: black;
+	}
 }
-
 
 /*Tablet-------------------------------------*/
-@media only screen and (min-width: 571px) and (max-width: 1010px){
-    body{
-        background: white;
-        height: 100%;
-        padding:8px;
-    }
-    
-    h1{
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 1.4em;
-        color: white;
-    }
-    
-    h2{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 20px;;
-        color: black;
-    }
-    
-    h3{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 17px;;
-        color: black;
-    }
-    
-    p{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 15px;;
-        color: black;
-    }
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+	body {
+		background: white;
+		height: 100%;
+		padding: 8px;
+	}
+
+	h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		font-size: 1.4em;
+		color: white;
+	}
+
+	h2 {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: black;
+	}
+
+	h3 {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: black;
+	}
+
+	p {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: black;
+	}
 }
 /*Desktop-------------------------------------*/
-@media only screen and (min-width: 1011px){
-    body{
-        background: white;
-        height: 100%;
-        padding:8px;
-    }
-    
-    h1{
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 2em;
-        color: white;
-    }
-    
-    h2{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 20px;;
-        color: black;
-    }
-    
-    h3{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 17px;;
-        color: black;
-    }
-    
-    p{
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 15px;;
-        color: black;
-    }
+@media only screen and (min-width: 1011px) {
+	body {
+		background: white;
+		height: 100%;
+		padding: 8px;
+	}
+
+	h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		font-size: 2em;
+		color: white;
+	}
+
+	h2 {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: black;
+	}
+
+	h3 {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: black;
+	}
+
+	p {
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: black;
+	}
 }
 /* Universal font sizes and colours */
 h1 {
-    font: Arial;
-    color: white;
-    font-size: 48;
+	font: Arial;
+	color: white;
+	font-size: 48;
 }
 
 h2 {
-    font: Arial;
-    color: white;
-    font-size: 36;
+	font: Arial;
+	color: white;
+	font-size: 36;
 }
 h3 {
-    font: Arial;
-    color: white;
-    font-size: 24;
+	font: Arial;
+	color: white;
+	font-size: 24;
 }
 
 body {
-    font: Arial;
-    color: white;
-    font-size: 18;
+	font: Arial;
+	color: white;
+	font-size: 18;
 }
-
 
 /* navbar */
 ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-  position: fixed;
-  background-color: #333;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	background-color: #333;
 }
 
 ul.navbar li {
-  float: left;
+	float: left;
 }
 
 ul.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 ul.navbar li a:hover {
-  background-color: #111;
+	background-color: #111;
 }
 
-.main{
-  margin-top: 30px;
-  height: 1500px;
+.main {
+	margin-top: 30px;
+	height: 1500px;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 canvas {
-  background-color: darkblue;
-  display: block;
+	background-color: darkblue;
+	display: block;
 }
 
 /*virtual park working space */
 
-#legend-marker{
-  display: grid;
-  background: url(assets/images/pexels-felix-mittermeier-956999.jpg);
-  border-spacing: 10px;
-  height: auto;
-  place-items: center;
-  align-content: center;
+#legend-marker {
+	display: grid;
+	background: url(assets/images/pexels-felix-mittermeier-956999.jpg);
+	border-spacing: 10px;
+	height: auto;
+	place-items: center;
+	align-content: center;
 }
 
-#legend-marker a{
-  font-size: 24px;
-  color: white;
+#legend-marker a {
+	font-size: 24px;
+	color: white;
 }
 
-#wacky-world-map{
-  height: 50%;
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#wacky-world-map {
+	height: 50%;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.attraction-section{
-  display: none;
-  color: white;
-  place-items: center;
-  align-content: center;
+.attraction-section {
+	display: none;
+	color: white;
+	place-items: center;
+	align-content: center;
+	background: rgba(11, 19, 30, 255);
+	background-position: center;
+	height: 70vh;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	border: 15px solid black;
 }
 
-.attraction-section h1{
-  font-size: 48px;
-  -webkit-text-stroke: 0.2px #000000;
+.attraction-section h1 {
+	font-size: 48px;
+	-webkit-text-stroke: 0.2px #000000;
 }
 
-.attraction-section p{
-  font-size: 24px;
-  -webkit-text-stroke: 0.2px #000000;
+.attraction-section p {
+	font-size: 24px;
+	-webkit-text-stroke: 0.2px #000000;
 }
-.dropdown-content{
-    position: relative;
-    display: inline-block;
-    width: 100%;
+.dropdown-content {
+	position: relative;
+	display: inline-block;
+	width: 100%;
 }
+
+.image-track > img {
+	width: 40vmin;
+	height: 40vmin;
+	object-fit: cover;
+	object-position: center;
+}
+
+.image-track {
+	display: flex;
+	gap: 4vmin;
+	left: 50%;
+	top: 50%;
+	transform: translate(25%, 0%);
+	user-select: none;
+}
+
 /* virtual park working space end */
