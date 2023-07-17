@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -173,48 +174,61 @@
 }
 * {box-sizing: border-box;}
 body { 
->>>>>>> Stashed changes
+
+=======
+ul.navbar {
+  list-style-type: none;
+>>>>>>> parent of a737f5d (update)
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* header */
-.header {
+  padding: 0;
   overflow: hidden;
-  background-color: #505050;
-  padding: 4px 2px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #333;
 }
 .header a {
   float: center;
+=======
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+>>>>>>> parent of a737f5d (update)
   color: white;
   text-align: center;
-    align-content: center;
-  padding: 12px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 2px;
 }
-}
+<<<<<<< HEAD
 .header a:hover {
   background-color: #505050;
   color: black;
-}
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-.header-right {
-  float: right;
-}
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
   .header-right {
     float: none;
   }
+=======
+
+ul.navbar li a:hover {
+  background-color: #111;
+}
+
+.main{
+  margin-top: 30px;
+  height: 1500px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  background-color: darkblue;
+  display: block;
+>>>>>>> parent of a737f5d (update)
 }
 /*virtual park working space */
