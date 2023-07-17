@@ -9,12 +9,10 @@
 			rel="icon"
 			href="assets/images/Wacky_World_Logo.png"
 			type="image/x-icon">
-			<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
     <title>FAQ</title>
 
     <style>
-       
-       
 		div.a {
 			text-align: left;
 		}
@@ -29,7 +27,7 @@
 		}
 		.dropdown-content {
 			display: none;
-            position: relative
+            position: relative;
 			background-color: darkgray;
 			min-width: 800px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -42,9 +40,9 @@
         .dropdown-content p{
             color: white;
         }
-		#FAQ {
+		#FAQ-h2 {
 		background-color: darkcyan;
-		color: black;
+		color: white;
 		padding: 40px;
 		text-align: center;
 		} 
@@ -55,8 +53,23 @@
 		background-color: black;
 		padding: 10px 10px;
 		} 
+
+        #FAQ-headings{
+            text-align:center;
+            color:white; 
+            width:100%;
+        }
+
         #FAQ-headings :hover {background-color: darkgray;}
         
+        #FAQ-h1 {
+            text-align:center; 
+            color:white; 
+            font-size:400%
+        }
+        
+
+
     </style>
 	</head>
     <body>
@@ -70,11 +83,11 @@
 		<img src="assets/images/temp-image.jpg" width="1000" height="500" alt="HELP CENTER">
 		
 		<div class="main">
-      	<h1  style="text-align:center;color:white;font-size:400%">HELP CENTER</h1>
+      	<h1 id="FAQ-h1">HELP CENTER</h1>
   
-		<h2 id="FAQ" style= "text-align:center;color:white";>FAQ</h2>
+		<h2 id="FAQ-h2">FAQ</h2>
 
-		<table style="text-align:center;color:white;width:100%;" id="FAQ-headings" >
+		<table id="FAQ-headings" >
             
         <tr><td style='font-size:30px;'>&#8853; 
         <section class= "dropdown">
